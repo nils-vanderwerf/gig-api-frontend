@@ -1,6 +1,5 @@
 import React from 'react';
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import GigList from "./components/GigList";
 import Gig from "./components/Gig";
 
@@ -9,10 +8,10 @@ const App = () => {
     <Router>
       <div>
         <h1>Gig App</h1>
-        <Switch>
+        <Routes>
           <Route exact path="/" component={GigList} />
           <Route exact path="/gigs/:id" component={Gig} />
-        </Switch>
+        </Routes>
       </div>
     </Router>
   );

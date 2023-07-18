@@ -6,5 +6,7 @@ const GigItem = ({ gig }) => {
       <h3>{gig.title}</h3>
       <p>{gig.description}</p>
     </div>
-  
+  )
 }
+
+export default GigItem

@@ -11,3 +11,5 @@ const GigList = ({ gigs }) => {
     </div>
   );
 }
+
+export default GigList;
